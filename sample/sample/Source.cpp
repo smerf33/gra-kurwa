@@ -1,13 +1,14 @@
 #include <conio.h>
-#include "header.h"
+#include "screen.h"
 #include <stdio.h>
 
 int main() {
-	SetDesktopResolution();
-	printf("hello world");
-	gotoxy(30, 30);
-	printf("new position");
-	getch();
+	screen a;
+	a.init();
+	a.gotoxy(10, 12);
+	printf("new line");
 
+
+	getch();
 	return 0;
 }
